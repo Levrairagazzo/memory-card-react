@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main-top{
+  display: flex;
+  justify-content: space-around;
+
+}
+.main-bottom{
+  /* display: grid;
+  grid-row: 1;
+  grid-column: 1; */
+}
+
+.top-component{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card{
+  padding: 15px;
+  border: solid burlywood 10px;
+  border-radius: 15px;
+  /* animation: slide-in 0.7s both; */
+  animation: rotate 0.7s ease-in-out both;
+}
+
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

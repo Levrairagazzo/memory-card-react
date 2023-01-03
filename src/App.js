@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./index.css";
+import CardList from "./CardList";
+import TopComponent from "./TopComponent";
+import { useState } from "react";
 
 function App() {
+
+  const [score, setScore] = useState(0);
+
+  const increment = () => {
+    setScore(score+1);
+  }
+
+  const resetScore = () => {
+    setScore(0);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+     <div className="main-top">
+      <TopComponent score={score} resetScore={resetScore}/>
+     </div>
+     <div className="main-bottom">
+     <CardList increment={increment} resetScore={resetScore}/>
+     </div>
     </div>
   );
 }
