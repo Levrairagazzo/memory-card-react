@@ -1,7 +1,10 @@
-
+import { useEffect } from "react";
 
 const Card = ({id, message, increment, shuffle, selectCard, portrait}) => {
 
+    // useEffect(() => {
+    //     console.log('The card with ID ' + id + ' has been modified');
+    //   }, [id, portrait, message, increment, shuffle, selectCard]);
     
 
 
@@ -12,8 +15,7 @@ const Card = ({id, message, increment, shuffle, selectCard, portrait}) => {
        selectCard(id);
        console.log(`Card # + ${id}`);
     }}>
-        {/* {console.log(portrait)} */}
-        <img src={portrait} alt="player portrait"></img>
+        <img className="player-portrait" src={portrait} alt="player portrait"></img>
     </div> );
 }
  

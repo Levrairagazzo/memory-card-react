@@ -17,21 +17,20 @@ code {
   justify-content: space-around;
 
 }
-.main-bottom{
-  /* display: grid;
-  grid-row: 1;
-  grid-column: 1; */
-}
 
 .top-component{
-  display: flex;
-  justify-content: space-around;
+  display: block;
+  /* justify-content: space-around; */
 }
 
+
 .card-list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  grid-gap: 5px;
+  /* flex-wrap: wrap;
+  justify-content: space-between; */
+  animation: slide-in 0.7s ease-in-out both;
 }
 
 .card{
@@ -39,8 +38,14 @@ code {
   border: solid burlywood 10px;
   border-radius: 15px;
   /* animation: slide-in 0.7s both; */
-  animation: rotate 0.7s ease-in-out both;
+  /* animation: rotate 0.7s ease-in-out both; */
+  display: flex;
+  justify-content: center;
 }
+
+/* .player-portrait{
+  background-position: center;
+} */
 
 
 @keyframes slide-in {
@@ -59,5 +64,13 @@ code {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width :400px) {
+  .card-list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-gap: 5px;
   }
 }

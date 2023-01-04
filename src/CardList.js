@@ -1,14 +1,13 @@
 import Card from "./Card";
 import './index.css';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // import allen from "./portraits/allen.jpeg"
 // import lebron from 
 
 const CardList = ({increment, resetScore}) => {
 
   const [selectedCards, setSelectedCards] = useState([]);
-//   const images = [allen];
-//   console.log()
+
 
   function importAll(r) {
     return r.keys().map(r);
@@ -28,6 +27,7 @@ const selectCard = (cardID) => {
     if(selectedCards.includes(cardID)){
         alert("Card was already selected !");
         resetScore();
+        setSelectedCards([]);
         return;
      }
 
@@ -53,6 +53,13 @@ const shuffle = () => {
 }
 
 const [cards, setCards] = useState(addCards)
+
+useEffect(() => {
+    // shuffle();
+    // setSelectedCards([]);
+    console.log("In useEffect")
+  }, [])
+
     return ( 
         <div className="card-list">
             {

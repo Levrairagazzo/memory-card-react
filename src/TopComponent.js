@@ -1,11 +1,12 @@
-const TopComponent = ({score, resetScore}) => {
+const TopComponent = ({score, resetScore, highScore}) => {
 
 
    
     return ( 
     <div className="top-component">
-        <h2>Memory game</h2>
-      <h2>Score: {score}</h2>
+      <h1 className="title">Memory game</h1>
+      <h2>Current score: {score}</h2>
+      <h2>High score: {highScore}</h2>
       <button onClick={() => resetScore()}>Reset score</button>
 
 
