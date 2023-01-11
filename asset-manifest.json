@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/memory-card-react/static/css/main.db0b8031.css",
+    "main.js": "/memory-card-react/static/js/main.ad719c04.js",
+    "static/media/Lebron.jpeg": "/memory-card-react/static/media/Lebron.869f8ffa69f8afb6f52f.jpeg",
+    "static/media/howard.jpeg": "/memory-card-react/static/media/howard.40d544c88f0bcebb1846.jpeg",
+    "static/media/giannis.jpeg": "/memory-card-react/static/media/giannis.99b31d86601e1652aa32.jpeg",
+    "static/media/paul.jpeg": "/memory-card-react/static/media/paul.e3b3a0d83a9bd131d35e.jpeg",
+    "static/media/curry.jpeg": "/memory-card-react/static/media/curry.bf9e6dd46757240245d4.jpeg",
+    "static/media/durant.jpeg": "/memory-card-react/static/media/durant.b335b2b3872925b29398.jpeg",
+    "static/media/iverson.jpeg": "/memory-card-react/static/media/iverson.726c5fd14260701df87c.jpeg",
+    "index.html": "/memory-card-react/index.html",
+    "main.db0b8031.css.map": "/memory-card-react/static/css/main.db0b8031.css.map",
+    "main.ad719c04.js.map": "/memory-card-react/static/js/main.ad719c04.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db0b8031.css",
+    "static/js/main.ad719c04.js"
+  ]
+}
